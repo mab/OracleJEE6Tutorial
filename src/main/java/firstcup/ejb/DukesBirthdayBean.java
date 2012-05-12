@@ -52,8 +52,9 @@ public class DukesBirthdayBean {
 			ageDifference--;
 		}
 
+		final int absAgeDifference = Math.abs(ageDifference);
 		// create and store the user's birthday in the database
-		final FirstcupUser user = new FirstcupUser(date, ageDifference);
+		final FirstcupUser user = new FirstcupUser(date, absAgeDifference);
 		em.persist(user);
 
 		LOG.log(Level.INFO, "Final ageDifference is: {0}", ageDifference);
