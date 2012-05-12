@@ -5,7 +5,7 @@
 
 	<persistence-unit name="firstcupPU" transaction-type="JTA">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+		<jta-data-source>java:jboss/datasources/OracleJEE6TutorialDS</jta-data-source>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
